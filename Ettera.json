@@ -1,0 +1,151 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Ettera",
+				"abbreviation": "ETT",
+				"full": "Ettera",
+				"url": "",
+				"color": "#000000",
+				"authors": [],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Inquisitor Malick",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "Human"
+			},
+			"source": "Ettera",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item +1 studded leather armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 16,
+			"cr": "8",
+			"shortName": true,
+			"languages": [
+				"Common",
+				"Dwarven",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"save": {
+				"wis": "+6",
+				"dex": "+6"
+			},
+			"skill": {
+				"insight": "+9",
+				"history": "+4",
+				"religion": "+4",
+				"stealth": "+6",
+				"perception": "+6",
+				"investigation": "+4",
+				"intimidation": "+4"
+			},
+			"level": 12,
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit +6} to hit, range 30/120 ft., one target. {@h}9 ({@damage 2d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"May Dash, Disengage or Hide"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"daily": {
+						"1": [
+							"{@spell command}",
+							"{@spell detect thoughts}",
+							"{@spell dispel magic}",
+							"{@spell find traps}",
+							"{@spell hold person}"
+						],
+						"4": [
+							"{@spell compelled duel}",
+							"{@spell detect evil and good}",
+							"{@spell detect magic}",
+							"{@spell divine favor}",
+							"{@spell protection from evil and good}",
+							"{@spell zone of truth}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}"
+							]
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"environment": [
+				"urban"
+			],
+			"isNpc": true
+		}
+	]
+}
